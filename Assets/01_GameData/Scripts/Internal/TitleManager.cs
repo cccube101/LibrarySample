@@ -140,9 +140,10 @@ public class TitleManager : MonoBehaviour
 
         foreach (var item in Data.SceneNames)
         {
-            if (item == SceneName.Title) break;
+            if (item == SceneName.Title) continue;
+            if (item == SceneName.BaseScene) break;
 
-            var obj = _stageButtons[(int)item];
+            var obj = _stageButtons[(int)item - 1];
             obj.GetComponentInChildren<TMP_Text>().SetText(item.ToString());
             obj.GetComponent<Button>().onClick.AddListener(() =>
             {

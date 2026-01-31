@@ -6,10 +6,10 @@ namespace Helper
 /// </summary>
 public enum SceneName
 {
+	Title,
 	Stage01,
 	Stage02,
 	Stage03,
-	Title,
 	BaseScene,
 }
 
