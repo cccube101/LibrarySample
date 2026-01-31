@@ -118,7 +118,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,7 +132,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 254
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -210,10 +210,10 @@ TextureImporter:
       name: Ground_1
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 1536
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: Ground_2
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 1536
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Ground_3
       rect:
         serializedVersion: 2
-        x: 769
+        x: 768
         y: 1536
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: Ground_4
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 1536
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +298,10 @@ TextureImporter:
       name: Ground_5
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 1280
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: Ground_6
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 1280
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: Ground_7
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 1280
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,10 +364,10 @@ TextureImporter:
       name: Ground_8
       rect:
         serializedVersion: 2
-        x: 769
+        x: 768
         y: 1280
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: Ground_9
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 1280
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,10 +408,10 @@ TextureImporter:
       name: Ground_10
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 1024
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,10 +430,10 @@ TextureImporter:
       name: Ground_11
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 1024
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,10 +452,10 @@ TextureImporter:
       name: Ground_12
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 1024
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,10 +474,10 @@ TextureImporter:
       name: Ground_13
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 1024
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: Ground_14
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 768
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,10 +518,10 @@ TextureImporter:
       name: Ground_15
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 768
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,10 +540,10 @@ TextureImporter:
       name: Ground_16
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 768
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: Ground_17
       rect:
         serializedVersion: 2
-        x: 769
+        x: 768
         y: 768
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: Ground_18
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 768
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,10 +606,10 @@ TextureImporter:
       name: Ground_19
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 512
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,10 +628,10 @@ TextureImporter:
       name: Ground_20
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 512
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,10 +650,10 @@ TextureImporter:
       name: Ground_21
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 512
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +672,10 @@ TextureImporter:
       name: Ground_22
       rect:
         serializedVersion: 2
-        x: 769
+        x: 768
         y: 512
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,10 +694,10 @@ TextureImporter:
       name: Ground_23
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 512
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,10 +716,10 @@ TextureImporter:
       name: Ground_24
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 256
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,10 +738,10 @@ TextureImporter:
       name: Ground_25
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 256
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,10 +760,10 @@ TextureImporter:
       name: Ground_26
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 256
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +782,10 @@ TextureImporter:
       name: Ground_27
       rect:
         serializedVersion: 2
-        x: 769
+        x: 768
         y: 256
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,10 +804,10 @@ TextureImporter:
       name: Ground_28
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 256
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -826,10 +826,10 @@ TextureImporter:
       name: Ground_29
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: Ground_30
       rect:
         serializedVersion: 2
-        x: 257
+        x: 256
         y: 0
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -870,10 +870,10 @@ TextureImporter:
       name: Ground_31
       rect:
         serializedVersion: 2
-        x: 513
+        x: 512
         y: 0
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -892,10 +892,10 @@ TextureImporter:
       name: Ground_32
       rect:
         serializedVersion: 2
-        x: 769
+        x: 768
         y: 0
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,10 +914,10 @@ TextureImporter:
       name: Ground_33
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1024
         y: 0
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -936,10 +936,10 @@ TextureImporter:
       name: Ground_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 1536
-        width: 255
-        height: 255
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -968,7 +968,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":7.0},"gridSpriteSize":{"x":255.0,"y":255.0},"gridSpriteOffset":{"x":1.0,"y":1.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":7.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Ground_0: 6682738439518977790
       Ground_1: -562605217060080129
