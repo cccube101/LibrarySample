@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66b5d20bd77e8e4e943b16858410284, type: 3}
+  m_Name: HierarchyData_BaseScene
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::Helper.HierarchyOverlayData
+  globalIDs:
+  - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-394631801-0
+  - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-933073874-0
+  - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1030215097-0
+  - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1800254572-0
+  - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-294417168-0
+  colorData:
+  - type: 1
+    headerBarColor: {r: 0.46232498, g: 1, b: 0, a: 1}
+    headerTextColor: {r: 0, g: 0, b: 0, a: 1}
+    separatorLineColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    separatorLineHeight: 1
+  - type: 1
+    headerBarColor: {r: 1, g: 0, b: 0.38475227, a: 1}
+    headerTextColor: {r: 0, g: 0, b: 0, a: 1}
+    separatorLineColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    separatorLineHeight: 1
+  - type: 1
+    headerBarColor: {r: 1, g: 0.8064979, b: 0, a: 1}
+    headerTextColor: {r: 0, g: 0, b: 0, a: 1}
+    separatorLineColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    separatorLineHeight: 1
+  - type: 1
+    headerBarColor: {r: 0, g: 0.6600313, b: 1, a: 1}
+    headerTextColor: {r: 0, g: 0, b: 0, a: 1}
+    separatorLineColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    separatorLineHeight: 1
+  - type: 1
+    headerBarColor: {r: 0, g: 1, b: 0, a: 1}
+    headerTextColor: {r: 0, g: 0, b: 0, a: 1}
+    separatorLineColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    separatorLineHeight: 1

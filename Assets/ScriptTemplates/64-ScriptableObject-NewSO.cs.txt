@@ -1,0 +1,10 @@
+using UnityEngine;
+
+    #ROOTNAMESPACEBEGIN#
+[CreateAssetMenu(menuName = "SO/#SCRIPTNAME#")]
+public class #SCRIPTNAME# : ScriptableObject
+{
+
+}
+
+#ROOTNAMESPACEEND#
