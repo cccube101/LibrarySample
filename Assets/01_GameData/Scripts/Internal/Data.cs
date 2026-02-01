@@ -31,7 +31,6 @@ public static class Data
 
 
 
-
     // ---------------------------- PublicMethod
     public static void SetGameState(GameState state)
     {
@@ -45,6 +44,7 @@ public static class Data
 
 
     // ---------------------------- PrivateMethod
+
 
 
 }

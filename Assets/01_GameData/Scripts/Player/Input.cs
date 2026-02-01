@@ -43,6 +43,7 @@ public static class Input
     };
 
 
+
     // ---------------------------- Public Methods
     public static void SetEnable()
     {

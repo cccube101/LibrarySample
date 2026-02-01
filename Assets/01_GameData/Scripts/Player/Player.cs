@@ -7,12 +7,15 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     // ---------------------------- SerializeField
+    [HorizontalLine("Param")]
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private int _jumpLimit;
+    [SerializeField] private float _jumpForce;
+
+    [HorizontalLine("Ray")]
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private float _groundRayLength;
     [SerializeField] private float _wallRayLength;
-
-    [SerializeField] private float _moveSpeed;
-    [SerializeField] private float _jumpForce;
 
     // ---------------------------- Field
     private readonly ReactiveProperty<float> _hp = new(200);
@@ -24,13 +27,16 @@ public class Player : MonoBehaviour
     private float _dir = 0f;
     private bool _groundRay = false;
     private bool _wallRay = false;
+    private int _jumpCount = 0;
+
+
 
     // ---------------------------- UnityMessage
     private void OnGUI()
     {
         var pos = C3Logger.LogParam.pos;
         var style = C3Logger.LogParam.style;
-        GUI.TextField(pos[0], $"dir:{_dir} ground:{_groundRay} wall:{_wallRay}", style);
+        GUI.TextField(pos[0], $"dir:{_dir} ground:{_groundRay} wall:{_wallRay} jump:{_jumpCount}", style);
     }
 
     private void Awake()
@@ -87,17 +93,25 @@ public class Player : MonoBehaviour
         Input.MoveDir.Subscribe(dir =>
         {
             _dir = dir.x;
-        })
-        .AddTo(this);
-
-        Input.OnJump.Subscribe(phase =>
-        {
-            if (phase == InputActionPhase.Performed)
+            if (dir.x != 0)
             {
-                _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                var angle = dir.x > 0 ? Vector2.zero : new Vector2(0, 180);
+                _tr.eulerAngles = angle;
             }
         })
         .AddTo(this);
+
+        Input.OnJump.SubscribeAwait(async (phase, ct) =>
+        {
+            if (phase == InputActionPhase.Performed && _jumpCount < _jumpLimit)
+            {
+                _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                await UniTask.WaitUntil(() => !_groundRay, cancellationToken: ct);
+                _jumpCount++;
+            }
+
+        }, AwaitOperation.Drop)
+        .RegisterTo(destroyCancellationToken);
 
         Input.OnFire.Subscribe(phase =>
         {
@@ -112,13 +126,8 @@ public class Player : MonoBehaviour
     private void RayUpdate()
     {
         var pos = _tr.position;
-
-        _groundRay = CastRay(Vector2.down, _groundRayLength);
-
-        var hitLeft = CastWallRay(Vector2.left, _dir < 0);
-        var hitRight = CastWallRay(Vector2.right, _dir > 0);
-        _wallRay = hitLeft || hitRight;
-
+        _groundRay = CastRay(-_tr.up, _groundRayLength);
+        _wallRay = CastRay(_tr.right, _wallRayLength);
         bool CastRay(Vector2 dir, float length)
         {
             var hit = Physics2D.Raycast(pos, dir, length, _groundMask);
@@ -126,12 +135,13 @@ public class Player : MonoBehaviour
             return hit;
         }
 
-        bool CastWallRay(Vector2 dir, bool shouldStop)
+        if (_wallRay && !_groundRay)
         {
-            var hit = CastRay(dir, _wallRayLength);
-            if (!hit) return false;
-            if (shouldStop && !_groundRay) _dir = 0f;
-            return true;
+            _dir = 0;
+        }
+        if (_groundRay)
+        {
+            _jumpCount = 0;
         }
     }
 

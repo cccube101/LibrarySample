@@ -32,6 +32,8 @@ public class TitleManager : MonoBehaviour
 
     private SceneName _loadScene = SceneName.Stage01;
 
+
+
     // ---------------------------- UnityMessage
     private void Awake()
     {
@@ -47,6 +49,8 @@ public class TitleManager : MonoBehaviour
 
         await Tasks.Canceled(StartEvent(destroyCancellationToken));
     }
+
+
 
     // ---------------------------- PrivateMethod
     #region StateObserve
