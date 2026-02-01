@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Player Player => _player;
     public GameData GameData { get; private set; } = new();
 
+
+
     // ---------------------------- UnityMessage
     private void Awake()
     {
@@ -17,8 +19,6 @@ public class GameManager : MonoBehaviour
     }
 
     // ---------------------------- PublicMethod
-
-
 
 
 
