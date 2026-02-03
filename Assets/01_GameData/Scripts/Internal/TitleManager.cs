@@ -30,8 +30,6 @@ public class TitleManager : MonoBehaviour
 
     private bool _isStart = false;
 
-    private SceneName _loadScene = SceneName.Stage01;
-
 
 
     // ---------------------------- UnityMessage
@@ -120,7 +118,7 @@ public class TitleManager : MonoBehaviour
     private async UniTask GamePlayEvent(CancellationToken ct)
     {
         await Fade(1f, ct);
-        SceneManager.LoadScene((int)_loadScene);
+        SceneManager.LoadScene((int)SceneName.BaseScene);
     }
 
     private async UniTask ExitEvent(CancellationToken ct)
@@ -151,7 +149,7 @@ public class TitleManager : MonoBehaviour
             obj.GetComponentInChildren<TMP_Text>().SetText(item.ToString());
             obj.GetComponent<Button>().onClick.AddListener(() =>
             {
-                _loadScene = item;
+                Data.SetCurrentScene(item);
                 Data.SetGameState(GameState.GamePlay);
             });
         }

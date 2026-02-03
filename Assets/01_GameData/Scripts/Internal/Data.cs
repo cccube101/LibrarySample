@@ -1,6 +1,7 @@
 using Helper;
 using R3;
 using System;
+using System.Collections.Generic;
 
 public enum GameState
 {
@@ -20,6 +21,9 @@ public static class Data
 {
     // ---------------------------- Property
     public static SceneName[] SceneNames { get; } = (SceneName[])Enum.GetValues(typeof(SceneName));
+    public static SceneName CurrentScene { get; private set; } = SceneName.Stage01;
+    public static bool IsInit { get; private set; } = false;
+    public static Dictionary<EnemyType, EnemySO.Param> EnemyDict { get; private set; }
 
     private static readonly ReactiveProperty<GameState> _gameState = new(global::GameState.Title);
     public static ReadOnlyReactiveProperty<GameState> GameState => _gameState;
@@ -32,6 +36,17 @@ public static class Data
 
 
     // ---------------------------- PublicMethod
+    public static void Init(EnemySO enemy)
+    {
+        EnemyDict = enemy.GetDict();
+        IsInit = true;
+    }
+
+    public static void SetCurrentScene(SceneName scene)
+    {
+        CurrentScene = scene;
+    }
+
     public static void SetGameState(GameState state)
     {
         _gameState.Value = state;

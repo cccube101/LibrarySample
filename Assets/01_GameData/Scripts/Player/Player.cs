@@ -60,6 +60,15 @@ public class Player : MonoBehaviour
         MoveUpdate();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        var obj = collision.gameObject;
+        if (obj.TryGetComponent<IEnemy>(out var enemy))
+        {
+            SubHP(enemy.GetAttackDamage());
+        }
+    }
+
     private void OnEnable()
     {
         Input.SetEnable();
